@@ -14,6 +14,7 @@ export default function Home() {
       </aside>
       <main className="bg-zinc-400 rounded flex-1">
         <Suspense fallback={<p>Carregando...</p>}>
+          {/* @ts-expect-error Async Component */}
           <RepoList />
         </Suspense>
       </main>
